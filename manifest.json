@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Voice Filler",
+  "version": "0.2",
+  "permissions": ["sidePanel", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "bg.js" },
+  "side_panel": { "default_path": "panel.html" },
+  "action": {}
+}
