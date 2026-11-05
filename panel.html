@@ -1,10 +1,35 @@
 <!doctype html>
-<html><body style="font-family:sans-serif;font-size:13px">
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: sans-serif; font-size: 13px; }
+    h4 { margin: 12px 0 4px; }
+    .current { font-weight: bold; }
+    #profileList div { margin: 2px 0; }
+    input { width: 40%; }
+    pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
   <button id="scan">Scan page</button>
   <button id="mic">Start mic</button>
   <button id="media">Find audio/video</button>
+  <button id="autofill">Autofill saved</button>
+
+  <h4>Fields</h4>
   <div id="fields"></div>
   <div id="mediaList"></div>
-  <pre id="log" style="white-space:pre-wrap"></pre>
+
+  <h4>Saved info</h4>
+  <div id="profileList"></div>
+  <input id="pKey" placeholder="name (e.g. email)">
+  <input id="pVal" placeholder="value">
+  <button id="pSave">Save</button>
+
+  <h4>Log</h4>
+  <pre id="log"></pre>
+
   <script src="panel.js"></script>
-</body></html>
+</body>
+</html>
