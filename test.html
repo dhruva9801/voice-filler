@@ -1,14 +1,30 @@
 <!doctype html>
-<html><body style="font-family:sans-serif">
+<html>
+<head><meta charset="utf-8"></head>
+<body style="font-family:sans-serif">
   <h2>Test form</h2>
   <label>First name <input name="first"></label><br><br>
   <label for="email">Email</label> <input id="email" type="email"><br><br>
   <label>Bio <textarea name="bio"></textarea></label><br><br>
   <label>Year
-    <select name="year"><option>Freshman</option><option>Sophomore</option><option>Junior</option></select>
+    <select name="year"><option>Freshman</option><option>Sophomore</option><option>Junior</option><option>Senior</option></select>
   </label><br><br>
-  <p>Q1: Pick one</p>
-  <label><input type="radio" name="q1" value="A"> A</label>
-  <label><input type="radio" name="q1" value="B"> B</label><br><br>
-  <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
-</body></html>
+
+  <fieldset>
+    <legend>Q1: Pick one</legend>
+    <label><input type="radio" name="q1" value="A"> A</label>
+    <label><input type="radio" name="q1" value="B"> B</label>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>Q2: Pick one</legend>
+    <label><input type="radio" name="q2" value="C"> C</label>
+    <label><input type="radio" name="q2" value="D"> D</label>
+  </fieldset><br>
+
+  <label><input type="checkbox" name="agree"> I agree</label><br><br>
+
+  <audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio><br><br>
+  <video controls width="320" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"></video>
+</body>
+</html>
